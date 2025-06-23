@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Partnerdesk Internship E-Certificates</title>
+  <title>Partnerdesk Interns E-Certificates</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Outfit', sans-serif;
-      background-color: #f6f9fc;
-      color: #222;
+      background-color: #f4f7fa;
       margin: 0;
       padding: 0;
+      color: #222;
     }
     header {
       background-color: #101e33;
@@ -72,7 +72,7 @@
 <body>
 
   <header>
-    <h1>Partnerdesk Internship E-Certificates</h1>
+    <h1>Partnerdesk Interns E-Certificates</h1>
   </header>
 
   <div class="container">
@@ -89,15 +89,11 @@
         </tr>
       </thead>
       <tbody>
-        <!-- Data Rows Inserted Here -->
-        <!-- SAMPLE TEMPLATE ROW BELOW - Will be replaced in next step -->
-        <!--
         <tr>
           <td>Yukta Sharma</td>
           <td>HR, Market Research and Analytics</td>
-          <td><a href="https://drive.google.com/..." class="button" target="_blank">Download Certificate</a></td>
+          <td><a href="https://drive.google.com/file/d/1TukM2ztKUok-7jCC8pFYmZlFTF55B2p0/view?usp=sharing" class="button" target="_blank">Download Certificate</a></td>
         </tr>
-        -->
       </tbody>
     </table>
   </div>
@@ -106,7 +102,7 @@
     function searchTable() {
       var input = document.getElementById("searchInput").value.toUpperCase();
       var rows = document.querySelector("#certTable tbody").rows;
-      
+
       for (let i = 0; i < rows.length; i++) {
         let name = rows[i].cells[0].textContent.toUpperCase();
         rows[i].style.display = name.includes(input) ? "" : "none";
