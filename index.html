@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Partnerdesk Internship E-Certificates</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: #f6f9fc;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #101e33;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+    .search-box {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    input[type="text"] {
+      padding: 10px;
+      width: 80%;
+      max-width: 500px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+    }
+    th, td {
+      padding: 14px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background-color: #eceff5;
+    }
+    a.button {
+      background-color: #101e33;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    a.button:hover {
+      background-color: #1d2b4f;
+    }
+    @media (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      td {
+        padding: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Partnerdesk Internship E-Certificates</h1>
+  </header>
+
+  <div class="container">
+    <div class="search-box">
+      <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search intern by name...">
+    </div>
+
+    <table id="certTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Domain</th>
+          <th>Certificate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data Rows Inserted Here -->
+        <!-- SAMPLE TEMPLATE ROW BELOW - Will be replaced in next step -->
+        <!--
+        <tr>
+          <td>Yukta Sharma</td>
+          <td>HR, Market Research and Analytics</td>
+          <td><a href="https://drive.google.com/..." class="button" target="_blank">Download Certificate</a></td>
+        </tr>
+        -->
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    function searchTable() {
+      var input = document.getElementById("searchInput").value.toUpperCase();
+      var rows = document.querySelector("#certTable tbody").rows;
+      
+      for (let i = 0; i < rows.length; i++) {
+        let name = rows[i].cells[0].textContent.toUpperCase();
+        rows[i].style.display = name.includes(input) ? "" : "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
