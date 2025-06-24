@@ -92,7 +92,10 @@
         <tr>
           <td>Yukta Sharma</td>
           <td>HR, Market Research and Analytics</td>
-          <td><a href="https://drive.google.com/file/d/1TukM2ztKUok-7jCC8pFYmZlFTF55B2p0/view?usp=sharing" class="button" target="_blank">Download Certificate</a></td>
+          <td>
+            <a href="https://drive.google.com/uc?export=download&id=1TukM2ztKUok-7jCC8pFYmZlFTF55B2p0" 
+               class="button" target="_blank">Download Certificate</a>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -100,11 +103,11 @@
 
   <script>
     function searchTable() {
-      var input = document.getElementById("searchInput").value.toUpperCase();
+      var input = document.getElementById("searchInput").value.toLowerCase().trim();
       var rows = document.querySelector("#certTable tbody").rows;
 
       for (let i = 0; i < rows.length; i++) {
-        let name = rows[i].cells[0].textContent.toUpperCase();
+        let name = rows[i].cells[0].textContent.toLowerCase().trim();
         rows[i].style.display = name.includes(input) ? "" : "none";
       }
     }
