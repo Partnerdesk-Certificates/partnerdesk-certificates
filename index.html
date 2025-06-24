@@ -45,18 +45,17 @@
       color: #444;
       margin-bottom: 20px;
     }
-    .search-filter {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
+    .search-box {
+      text-align: center;
       margin-bottom: 20px;
     }
-    input[type="text"], select {
+    input[type="text"] {
       padding: 10px;
       border: 1px solid #ccc;
       border-radius: 8px;
       font-size: 16px;
+      width: 80%;
+      max-width: 500px;
     }
     table {
       width: 100%;
@@ -97,9 +96,6 @@
       .header-flex {
         flex-direction: column;
       }
-      .search-filter {
-        flex-direction: column;
-      }
       table, thead, tbody, th, td, tr {
         display: block;
       }
@@ -123,18 +119,8 @@
       🎓 These e-certificates are officially issued by Partnerdesk to interns who successfully completed their internship. They can be verified directly via download links below.
     </p>
 
-    <div class="search-filter">
+    <div class="search-box">
       <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search by intern name...">
-      <select id="domainFilter" onchange="searchTable()">
-        <option value="">Filter by domain</option>
-        <option value="HR">HR</option>
-        <option value="Marketing">Marketing</option>
-        <option value="Digital Marketing">Digital Marketing</option>
-        <option value="Sales">Sales</option>
-        <option value="Finance">Finance</option>
-        <option value="Content">Content</option>
-        <!-- Add more if needed -->
-      </select>
     </div>
 
     <table id="certTable">
@@ -151,7 +137,7 @@
           <td>HR, Market Research and Analytics</td>
           <td><a href="https://drive.google.com/uc?export=download&id=1TukMvp4QCXD0Ggf2gdSMbf2yXK-1PoOG" class="button" target="_blank">Download Certificate</a></td>
         </tr>
-        <!-- Add more rows here -->
+        <!-- Add more intern rows here -->
       </tbody>
     </table>
   </div>
@@ -163,16 +149,12 @@
 
   <script>
     function searchTable() {
-      var nameInput = document.getElementById("searchInput").value.toLowerCase();
-      var domainInput = document.getElementById("domainFilter").value.toLowerCase();
+      var input = document.getElementById("searchInput").value.toLowerCase().trim();
       var rows = document.querySelector("#certTable tbody").rows;
 
       for (let i = 0; i < rows.length; i++) {
         let name = rows[i].cells[0].textContent.toLowerCase();
-        let domain = rows[i].cells[1].textContent.toLowerCase();
-        let nameMatch = name.includes(nameInput);
-        let domainMatch = domain.includes(domainInput) || domainInput === "";
-        rows[i].style.display = nameMatch && domainMatch ? "" : "none";
+        rows[i].style.display = name.includes(input) ? "" : "none";
       }
     }
   </script>
