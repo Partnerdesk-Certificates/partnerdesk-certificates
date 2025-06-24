@@ -17,7 +17,21 @@
       background-color: #101e33;
       color: white;
       padding: 20px;
-      text-align: center;
+    }
+    .header-flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .header-flex img {
+      height: 50px;
+      width: auto;
+    }
+    .header-flex h1 {
+      font-size: 22px;
+      margin: 0;
     }
     .container {
       max-width: 1000px;
@@ -60,6 +74,9 @@
       background-color: #1d2b4f;
     }
     @media (max-width: 600px) {
+      .header-flex {
+        flex-direction: column;
+      }
       table, thead, tbody, th, td, tr {
         display: block;
       }
@@ -72,7 +89,10 @@
 <body>
 
   <header>
-    <h1>Partnerdesk Interns E-Certificates</h1>
+    <div class="header-flex">
+      <img src="https://lh4.googleusercontent.com/H-3UhXt6-UYpGcHmvI2hKGx1Xx5l-eafOxCJiIagpqxbQY8QbpgXzE3U3qS4t_98iDMLLAOYPwnrxm_osIboNjR57fQbL-KHfJv86ivwsLSjv7KUXffkJ3Ol6KacCcrvgCvvnf43jQw=w16383" alt="Partnerdesk Logo">
+      <h1>Partnerdesk Interns E-Certificates</h1>
+    </div>
   </header>
 
   <div class="container">
