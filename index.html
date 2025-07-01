@@ -1,192 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Partnerdesk Interns E-Certificates</title>
-  <link rel="icon" href="https://lh4.googleusercontent.com/H-3UhXt6-UYpGcHmvI2hKGx1Xx5l-eafOxCJiIagpqxbQY8QbpgXzE3U3qS4t_98iDMLLAOYPwnrxm_osIboNjR57fQbL-KHfJv86ivwsLSjv7KUXffkJ3Ol6KacCcrvgCvvnf43jQw=w16383" />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Outfit', sans-serif;
-      background-color: #f4f7fa;
-      margin: 0;
-      padding: 0;
-      color: #222;
-    }
-    header {
-      background-color: #101e33;
-      color: white;
-      padding: 20px;
-    }
-    .header-flex {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-    .header-flex img {
-      height: 50px;
-      width: auto;
-    }
-    .header-flex h1 {
-      font-size: 22px;
-      margin: 0;
-    }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
-    .info-note {
-      text-align: center;
-      font-size: 14px;
-      color: #444;
-      margin-bottom: 20px;
-    }
-    .search-box {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    input[type="text"] {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 16px;
-      width: 80%;
-      max-width: 500px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background-color: white;
-    }
-    th, td {
-      padding: 14px;
-      border-bottom: 1px solid #ddd;
-      text-align: left;
-    }
-    th {
-      background-color: #eceff5;
-    }
-    a.button {
-      background-color: #101e33;
-      color: white;
-      padding: 8px 14px;
-      border-radius: 6px;
-      text-decoration: none;
-    }
-    a.button:hover {
-      background-color: #1d2b4f;
-    }
-    footer {
-      background-color: #101e33;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      margin-top: 40px;
-    }
-    footer a {
-      color: #fff;
-      text-decoration: underline;
-    }
-    @media (max-width: 600px) {
-      .header-flex {
-        flex-direction: column;
-      }
-      table, thead, tbody, th, td, tr {
-        display: block;
-      }
-      td {
-        padding: 10px 0;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <div class="header-flex">
-      <img src="https://lh4.googleusercontent.com/H-3UhXt6-UYpGcHmvI2hKGx1Xx5l-eafOxCJiIagpqxbQY8QbpgXzE3U3qS4t_98iDMLLAOYPwnrxm_osIboNjR57fQbL-KHfJv86ivwsLSjv7KUXffkJ3Ol6KacCcrvgCvvnf43jQw=w16383" alt="Partnerdesk Logo">
-      <h1>Partnerdesk Interns E-Certificates</h1>
-    </div>
-  </header>
-
-  <div class="container">
-    <p class="info-note">
-      🎓 These e-certificates are officially issued by Partnerdesk to interns who successfully completed their internship. They can be verified directly via download links below.
-    </p>
-
-    <div class="search-box">
-      <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search by intern name...">
-    </div>
-
-    <table id="certTable">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Domain</th>
-          <th>Certificate</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Anushka Agrawal</td>
-          <td>HR, Marketing</td>
-          <td><a href="https://drive.google.com/uc?export=download&id=1UBuwvJiIDlLKH_-d41l-xFBD6ZA9UbrI" class="button" target="_blank">Download Certificate</a></td>
-        </tr>
-        <tr>
-          <td>Korla Gundi Parvath Ruchita</td>
-          <td>HR, Marketing</td>
-          <td><a href="https://drive.google.com/uc?export=download&id=1UMgxDr3OF4EUoWJ6pOzcKpAUsGoisJ8-" class="button" target="_blank">Download Certificate</a></td>
-        </tr>
-        <tr>
-          <td>Priyanka Deb</td>
-          <td>HR, Marketing</td>
-          <td><a href="https://drive.google.com/uc?export=download&id=1UGbzID1_m231DUYLGCisk57yQxopulUi" class="button" target="_blank">Download Certificate</a></td>
-        </tr>
-        <tr>
-          <td>Shriya Deshpande</td>
-          <td>HR, Marketing</td>
-          <td><a href="https://drive.google.com/uc?export=download&id=1USV_SsIoGaAVeVz_6EB0fb8MNJMBuJsA" class="button" target="_blank">Download Certificate</a></td>
-        </tr>
-        <tr>
-          <td>Simran Seerwani</td>
-          <td>HR, Marketing</td>
-          <td><a href="https://drive.google.com/uc?export=download&id=1UCCb8qBZJqP7bA9PyKUcr1hj4sibWdpr" class="button" target="_blank">Download Certificate</a></td>
-        </tr>
-        <tr>
-          <td>Sinjini Das</td>
-          <td>HR, Marketing</td>
-          <td><a href="https://drive.google.com/uc?export=download&id=1UE3HDNo6YFtGEEbDp62m8_2lca86PELy" class="button" target="_blank">Download Certificate</a></td>
-        </tr>
-        <tr>
-          <td>Yukta Sharma</td>
-          <td>HR, Market Research and Analytics</td>
-          <td><a href="https://drive.google.com/uc?export=download&id=1TukMvp4QCXD0Ggf2gdSMbf2yXK-1PoOG" class="button" target="_blank">Download Certificate</a></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <footer>
-    © 2025 Partnerdesk | <a href="https://www.partnerdesk.in" target="_blank">www.partnerdesk.in</a> |
-    📞 7525869600 | 📧 <a href="mailto:internship.partnerdesk@gmail.com">internship.partnerdesk@gmail.com</a>
-  </footer>
-
-  <script>
-    function searchTable() {
-      var input = document.getElementById("searchInput").value.toLowerCase().trim();
-      var rows = document.querySelector("#certTable tbody").rows;
-
-      for (let i = 0; i < rows.length; i++) {
-        let name = rows[i].cells[0].textContent.toLowerCase();
-        rows[i].style.display = name.includes(input) ? "" : "none";
-      }
-    }
-  </script>
-
-</body>
-</html>
+<tbody>
+  <tr>
+    <td>Anushka Agrawal</td>
+    <td>HR, Marketing</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1UBuwvJiIDlLKH_-d41l-xFBD6ZA9UbrI" class="button" target="_blank">Download Certificate</a></td>
+  </tr>
+  <tr>
+    <td>Korla Gundi Parvath Ruchita</td>
+    <td>HR, Marketing</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1UMgxDr3OF4EUoWJ6pOzcKpAUsGoisJ8-" class="button" target="_blank">Download Certificate</a></td>
+  </tr>
+  <tr>
+    <td>Priyanka Deb</td>
+    <td>HR, Marketing</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1UGbzID1_m231DUYLGCisk57yQxopulUi" class="button" target="_blank">Download Certificate</a></td>
+  </tr>
+  <tr>
+    <td>Shriya Deshpande</td>
+    <td>HR, Marketing</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1USV_SsIoGaAVeVz_6EB0fb8MNJMBuJsA" class="button" target="_blank">Download Certificate</a></td>
+  </tr>
+  <tr>
+    <td>Simran Seerwani</td>
+    <td>HR, Marketing</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1UCCb8qBZJqP7bA9PyKUcr1hj4sibWdpr" class="button" target="_blank">Download Certificate</a></td>
+  </tr>
+  <tr>
+    <td>Sinjini Das</td>
+    <td>HR, Marketing</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1UE3HDNo6YFtGEEbDp62m8_2lca86PELy" class="button" target="_blank">Download Certificate</a></td>
+  </tr>
+  <tr>
+    <td>Yukta Sharma</td>
+    <td>HR, Market Research and Analytics</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1TukMvp4QCXD0Ggf2gdSMbf2yXK-1PoOG" class="button" target="_blank">Download Certificate</a></td>
+  </tr>
+  <tr>
+    <td>Ashish Bharadwaj</td>
+    <td>Human Resource</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=1fECcpGDqUIXtC8lNRd-QhVRccXC3Tt-B" class="button" target="_blank">Download Certificate</a></td>
+  </tr>
+  <tr>
+    <td>Dharmveer Gour</td>
+    <td>Human Resource</td>
+    <td><a href="https://drive.google.com/uc?export=download&id=13v2AdGwxbBOU6UsYnHJsKZx9RQudeDRG" class="button" target="_blank">Download Certificate</a></td>
+  </tr>
+</tbody>
